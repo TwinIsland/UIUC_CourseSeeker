@@ -9,6 +9,7 @@ def new_series():
         a.write(key)
     a.close()
 
+
 if not exists("ENCRY_KEY/KEY"):
 
     while 1:

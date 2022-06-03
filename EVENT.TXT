@@ -9,3 +9,4 @@
 [¡Ì] sId: sample --- change pwd    2022-06-02 22:33:33
 [¡Ì] sId: ADMIN --- remove user: sample    2022-06-02 22:33:53
 [¡Ì] sId: ADMIN --- add user: sample    2022-06-02 22:34:09
+[¡Ì] sId: ADMIN --- ip pool update    2022-06-03 12:13:35

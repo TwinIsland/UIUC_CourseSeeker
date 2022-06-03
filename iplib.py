@@ -5,6 +5,7 @@ import time
 import eventRec
 import random
 
+
 def updateLib():
     print("updating IpLib...")
     c = json.loads(re.get("https://proxylist.geonode.com/api/proxy-list")
@@ -25,7 +26,10 @@ def updateLib():
 
 
 def get_header():
-    return "{'content-type': 'application/json'}"
+    return {"User-Agent":
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 "
+            "Safari/537.36",
+            "Accept-Language": "gzip, deflate"}
 
 
 class IpLib:
