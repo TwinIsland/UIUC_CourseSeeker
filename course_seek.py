@@ -8,10 +8,11 @@ DEFAULT_COURSE_URL = "https://courses.illinois.edu/schedule/2022/fall/CS/233"
 
 
 class CourseSeeker:
-    def __init__(self, courseURL: list,
+    def __init__(self,
+                 courseURL: list,
                  updateFreq=10,
                  endSession=time.time() + 604800,
-                 keepSession = False):
+                 keepSession=False):
         self.courseURL = courseURL
         self.updateFreq = updateFreq
         self.endSession = endSession

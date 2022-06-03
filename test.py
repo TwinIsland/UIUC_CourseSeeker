@@ -4,4 +4,6 @@ import iplib
 from lxml import etree
 import requests
 
-c = requests.get("https://courses.illinois.edu/schedule/2022/fall/CS/233").content
+ip = iplib.IpLib()
+
+print(ip.get_ip())
