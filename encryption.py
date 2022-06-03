@@ -1,22 +1,19 @@
-import rsa
+from cryptography.fernet import Fernet
 from os.path import exists
 import eventRec
 
 
 class Encryption:
-    if not exists("ENCRY_kEY/PUB.PEM") or not exists("ENCRY_kEY/KEY.PEM"):
+    if not exists("ENCRY_kEY/KEY"):
         print("ENCRYPT KEY INIT FAILED !")
-        eventRec.rec_msg("encryption init failed")
+        eventRec.fail_msg(msg="encryption init failed")
         exit()
-    with open("ENCRY_kEY/PUB.PEM", "r") as a:
-        publicKeyReloaded = rsa.PublicKey.load_pkcs1(a.read().encode('utf8'))
-    a.close()
-    with open("ENCRY_kEY/KEY.PEM", "r") as a:
-        privateKeyReloaded = rsa.PrivateKey.load_pkcs1(a.read().encode('utf8'))
+    with open("ENCRY_kEY/KEY", "rb") as a:
+        fernet = Fernet(a.read())
     a.close()
 
-    def enc(self, plaintext: str) -> bytes:
-        return rsa.encrypt(plaintext.encode(), self.publicKeyReloaded)
+    def enc(self, plaintext: str) -> str:
+        return self.fernet.encrypt(plaintext.encode()).decode("utf-8")
 
-    def dec(self, ciphertext: bytes) -> str:
-        return rsa.decrypt(ciphertext, self.privateKeyReloaded).decode()
+    def dec(self, ciphertext: str) -> str:
+        return self.fernet.decrypt(ciphertext.encode()).decode()

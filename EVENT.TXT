@@ -3,3 +3,9 @@
 [-] encryption init failed    2022-06-02 21:21:42
 [¡Ì] sId: encryption key generated --- UNKNOWN    2022-06-02 21:24:17
 [¡Ì] sId: ADMIN --- init key    2022-06-02 21:24:17
+[¡Ì] sId: ADMIN --- init key    2022-06-02 22:27:15
+[¡Ì] sId: ADMIN --- init key    2022-06-02 22:30:14
+[¡Ì] sId: ADMIN --- add user: sample    2022-06-02 22:33:25
+[¡Ì] sId: sample --- change pwd    2022-06-02 22:33:33
+[¡Ì] sId: ADMIN --- remove user: sample    2022-06-02 22:33:53
+[¡Ì] sId: ADMIN --- add user: sample    2022-06-02 22:34:09
