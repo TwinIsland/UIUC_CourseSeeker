@@ -1,0 +1,5 @@
+[-] encryption init failed    2022-06-02 21:07:55
+[-] encryption init failed    2022-06-02 21:21:11
+[-] encryption init failed    2022-06-02 21:21:42
+[¡Ì] sId: encryption key generated --- UNKNOWN    2022-06-02 21:24:17
+[¡Ì] sId: ADMIN --- init key    2022-06-02 21:24:17
