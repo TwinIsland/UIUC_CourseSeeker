@@ -14,8 +14,10 @@ def updateLib():
 
     ip_list = [i["ip"] for i in c["data"]]
     port_list = [i["port"] for i in c["data"]]
-    proxy = list(zip(ip_list, port_list))
-    proxy.append(time.time())
+    proxy = {}
+    for i in range(len(ip_list)):
+        proxy[ip_list[i]] = port_list[i]
+    proxy["sessionTime"] = time.time()
 
     with open("pool", "wb") as a:
         a.write(pickle.dumps(proxy))
@@ -28,17 +30,16 @@ def get_header():
 class IpLib:
     try:
         with open("pool", "rb") as a:
-            res = list(pickle.loads(a.read()))
-        print(res)
-        if time.time() - res[-1] > 86400:
+            res = dict(pickle.loads(a.read()))
+        if time.time() - res["sessionTime"] > 86400:
             updateLib()
             eventRec.ok_msg(msg="ip pool update")
             res = pickle.loads(open("pool", "rb").read())
     except FileNotFoundError:
         updateLib()
-        res = list(pickle.loads(open("pool", "rb").read()))
+        res = dict(pickle.loads(open("pool", "rb").read()))
 
-    res = res.pop()
+    res.pop("sessionTime")
 
     def get_ip(self):
         return random.choice(self.res)

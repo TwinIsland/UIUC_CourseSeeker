@@ -1,9 +1,7 @@
-import encryption
+import time
+import eventRec
+import iplib
+from lxml import etree
+import requests
 
-encr = encryption.Encryption()
-
-a = encr.enc("hello")
-
-print(a)
-
-print(encr.dec(a))
+c = requests.get("https://courses.illinois.edu/schedule/2022/fall/CS/233").content
