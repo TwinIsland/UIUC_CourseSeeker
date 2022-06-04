@@ -35,6 +35,8 @@ iplib.get_header()
 ```
 get the header, static function
 
+---
+
 ### Encryption
 provide simple encryption method, need init to generate key, new an instance to use
 
@@ -48,3 +50,5 @@ decryption method
 enc(self, plaintext: str) -> str:
 ```
 encryption method
+
+---
