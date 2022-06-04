@@ -18,3 +18,5 @@
 [¡Ì] sId: test --- find course: 64548    2022-06-03 22:27:44
 [-] start supervising...    2022-06-03 22:36:21
 [¡Ì] sId: test --- find course: 64548    2022-06-03 22:36:21
+[-] start supervising...    2022-06-03 22:40:36
+[¡Ì] sId: test --- find course: 64548    2022-06-03 22:40:37

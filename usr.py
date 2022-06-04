@@ -8,13 +8,11 @@ def get_cookies_address(sId):
 class User:
     with open("UsrLib/Usr.json", 'r') as usr:
         usrDict = json.loads(usr.read())
-    usr.close()
     encrypt = encryption.Encryption()
 
     def __update_database(self):
         with open("UsrLib/Usr.json", 'w') as usr:
             usr.write(json.dumps(self.usrDict))
-        usr.close()
 
     def get_pwd_by_id(self, sId):
         return self.encrypt.dec(self.usrDict[sId]['pwd'])

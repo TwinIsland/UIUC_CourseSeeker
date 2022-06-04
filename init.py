@@ -7,7 +7,6 @@ def new_series():
     key = Fernet.generate_key()
     with open("ENCRY_KEY/KEY", "wb") as a:
         a.write(key)
-    a.close()
 
 
 if not exists("ENCRY_KEY/KEY"):

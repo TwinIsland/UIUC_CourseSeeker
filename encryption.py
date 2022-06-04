@@ -10,7 +10,6 @@ class Encryption:
         exit()
     with open("ENCRY_kEY/KEY", "rb") as a:
         fernet = Fernet(a.read())
-    a.close()
 
     def enc(self, plaintext: str) -> str:
         return self.fernet.encrypt(plaintext.encode()).decode("utf-8")
