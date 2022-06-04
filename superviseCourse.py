@@ -8,7 +8,7 @@ import json
 
 class SuperviseCourses:
     def __init__(self,
-                 course: dict,
+                 course: dict[str, str],
                  user: str,
                  updateFreq=10,
                  endSession=time.time() + 604800,
@@ -73,7 +73,7 @@ class SuperviseCourses:
 
 
 test = SuperviseCourses({"url": "https://courses.illinois.edu/schedule/2022/fall/CS/233",
-                         "crn": 645489},
+                         "crn": 64548},
                         user="test")
 
 test.start()

@@ -42,3 +42,6 @@
 [X] sId: test --- session end    2022-06-04 00:23:06
 [V] sId: ADMIN --- add user: steven    2022-06-04 00:27:44
 [V] sId: ADMIN --- remove user: steven    2022-06-04 00:28:12
+[-] start supervising...    2022-06-04 11:00:33
+[-] start supervising...    2022-06-04 11:00:39
+[V] sId: test --- find course: 64548    2022-06-04 11:00:40
