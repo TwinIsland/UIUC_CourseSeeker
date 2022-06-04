@@ -4,7 +4,7 @@
 `course`: variable that storage course info, dictionary with keys:`url` and `crn`
 
 
-###Tools
+### Tools
 ```
 get_course_info(course_name: str, crn: str) -> dict: 
 ```
@@ -19,7 +19,7 @@ return if `course` is valid, need internet
 
 ---
 
-###IpLib
+### IpLib
 class to provide ip pool and header, new an instance to use
 
 
