@@ -12,7 +12,7 @@
 [¡Ì] sId: ADMIN --- ip pool update    2022-06-03 12:13:35
 [¡Ì] sId: ADMIN --- add user: test    2022-06-03 14:09:49
 [X] sId: test --- internet retry fail: Proxy URL had no scheme, should start with http:// or https://    2022-06-03 22:16:44
-[-] start supervising¡£¡£¡£    2022-06-03 22:27:28
+[-] start supervising...    2022-06-03 22:27:28
 [¡Ì] sId: test --- find course: 64548    2022-06-03 22:27:29
 [-] start supervising...    2022-06-03 22:27:43
 [¡Ì] sId: test --- find course: 64548    2022-06-03 22:27:44
@@ -20,3 +20,23 @@
 [¡Ì] sId: test --- find course: 64548    2022-06-03 22:36:21
 [-] start supervising...    2022-06-03 22:40:36
 [¡Ì] sId: test --- find course: 64548    2022-06-03 22:40:37
+[¡Ì] sId: ADMIN --- remove user: test    2022-06-03 23:18:21
+[¡Ì] sId: sample --- change pwd    2022-06-03 23:18:42
+[-] start supervising...    2022-06-04 00:02:07
+[¡Ì] sId: test --- find course: 64548    2022-06-04 00:02:07
+[-] start supervising...    2022-06-04 00:09:50
+[¡Ì] sId: test --- find course: 64548    2022-06-04 00:09:50
+[-] start supervising...    2022-06-04 00:10:16
+[-] start supervising...    2022-06-04 00:11:13
+[¡Ì] sId: ADMIN --- ip pool update    2022-06-04 00:14:25
+[-] start supervising...    2022-06-04 00:14:25
+[¡Ì] sId: test --- find course: 64548    2022-06-04 00:14:26
+[-] start supervising...    2022-06-04 00:14:30
+[-] start supervising...    2022-06-04 00:15:02
+[-] start supervising...    2022-06-04 00:17:54
+[¡Ì] sId: test --- find course: 64548    2022-06-04 00:17:54
+[-] start supervising...    2022-06-04 00:18:43
+[-] start supervising...    2022-06-04 00:21:28
+[¡Ì] sId: test --- find course: 64548    2022-06-04 00:21:28
+[-] start supervising...    2022-06-04 00:22:04
+[X] sId: test --- session end    2022-06-04 00:23:06

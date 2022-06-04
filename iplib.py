@@ -6,7 +6,7 @@ import eventRec
 import random
 
 
-def updateLib():
+def update_lib():
     print("updating IpLib...")
     c = json.loads(re.get("https://proxylist.geonode.com/api/proxy-list")
                    .content
@@ -37,11 +37,11 @@ class IpLib:
         with open("pool", "rb") as a:
             res = list(pickle.loads(a.read()))
         if time.time() - res[-1] > 43200:
-            updateLib()
+            update_lib()
             eventRec.ok_msg(msg="ip pool update")
             res = pickle.loads(open("pool", "rb").read())
     except FileNotFoundError:
-        updateLib()
+        update_lib()
         res = list(pickle.loads(open("pool", "rb").read()))
 
     res.pop()

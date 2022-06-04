@@ -46,6 +46,7 @@ class SuperviseCourses:
                 soup = BeautifulSoup(self.course_spec["status"], "lxml")
                 return int(soup.find(class_="hide").text)
             else:
+                print("invalid content: retry: " + str(self.retry))
                 self.retry -= 1
                 return -1
         except Exception as e:
@@ -71,8 +72,8 @@ class SuperviseCourses:
         return False
 
 
-# test = SuperviseCourses({"url": "https://courses.illinois.edu/schedule/2022/fall/CS/233",
-#                          "crn": 64548},
-#                         user="test")
-#
-# test.start()
+test = SuperviseCourses({"url": "https://courses.illinois.edu/schedule/2022/fall/CS/233",
+                         "crn": 645489},
+                        user="test")
+
+test.start()

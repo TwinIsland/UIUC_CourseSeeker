@@ -1,9 +1,6 @@
 import json
 import encryption
 
-def get_cookies_address(sId):
-    return "UsrLib/" + sId + '.pkl'
-
 
 class User:
     with open("UsrLib/Usr.json", 'r') as usr:
