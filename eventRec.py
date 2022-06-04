@@ -14,7 +14,7 @@ def fail_msg(sId="ADMIN", msg="UNKNOWN"):
 
 
 def ok_msg(sId="ADMIN", msg="UNKNOWN"):
-    c = "[√] sId: " + str(sId) + " --- " + msg + "    " + get_time() + "\n"
+    c = "[V] sId: " + str(sId) + " --- " + msg + "    " + get_time() + "\n"
     file = open("EVENT.TXT", 'a+')
     file.write(c)
     file.close()
