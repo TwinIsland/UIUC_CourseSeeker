@@ -10,3 +10,11 @@
 [¡Ì] sId: ADMIN --- remove user: sample    2022-06-02 22:33:53
 [¡Ì] sId: ADMIN --- add user: sample    2022-06-02 22:34:09
 [¡Ì] sId: ADMIN --- ip pool update    2022-06-03 12:13:35
+[¡Ì] sId: ADMIN --- add user: test    2022-06-03 14:09:49
+[X] sId: test --- internet retry fail: Proxy URL had no scheme, should start with http:// or https://    2022-06-03 22:16:44
+[-] start supervising¡£¡£¡£    2022-06-03 22:27:28
+[¡Ì] sId: test --- find course: 64548    2022-06-03 22:27:29
+[-] start supervising...    2022-06-03 22:27:43
+[¡Ì] sId: test --- find course: 64548    2022-06-03 22:27:44
+[-] start supervising...    2022-06-03 22:36:21
+[¡Ì] sId: test --- find course: 64548    2022-06-03 22:36:21

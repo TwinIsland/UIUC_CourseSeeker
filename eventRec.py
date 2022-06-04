@@ -6,18 +6,24 @@ def get_time():
 
 
 def fail_msg(sId="ADMIN", msg="UNKNOWN"):
+    c = "[X] sId: " + str(sId) + " --- " + msg + "    " + get_time() + "\n"
     file = open("EVENT.TXT", 'a+')
-    file.write("[X] sId: " + str(sId) + " --- " + msg + "    " + get_time() + "\n")
+    file.write(c)
     file.close()
+    return c
 
 
 def ok_msg(sId="ADMIN", msg="UNKNOWN"):
+    c = "[√] sId: " + str(sId) + " --- " + msg + "    " + get_time() + "\n"
     file = open("EVENT.TXT", 'a+')
-    file.write("[√] sId: " + str(sId) + " --- " + msg + "    " + get_time() + "\n")
+    file.write(c)
     file.close()
+    return c
 
 
 def rec_msg(msg=" "):
+    c = "[-] " + msg + "    " + get_time() + "\n"
     file = open("EVENT.TXT", 'a+')
-    file.write("[-] " + msg + "    " + get_time() + "\n")
+    file.write(c)
     file.close()
+    return c
