@@ -21,8 +21,8 @@ def ok_msg(sId="ADMIN", msg="UNKNOWN"):
     return c
 
 
-def rec_msg(msg=" "):
-    c = "[-] " + msg + "    " + get_time() + "\n"
+def rec_msg(sId="ADMIN", msg=" "):
+    c = "[-] sId: " + str(sId) + " --- " + msg + "    " + get_time() + "\n"
     file = open("EVENT.TXT", 'a+')
     file.write(c)
     file.close()

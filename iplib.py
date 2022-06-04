@@ -23,6 +23,7 @@ def update_lib():
 
     with open("pool", "wb") as a:
         a.write(pickle.dumps(proxy))
+    eventRec.ok_msg(msg="update ip pool")
 
 
 def get_header():

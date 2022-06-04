@@ -45,3 +45,9 @@
 [-] start supervising...    2022-06-04 11:00:33
 [-] start supervising...    2022-06-04 11:00:39
 [V] sId: test --- find course: 64548    2022-06-04 11:00:40
+[V] sId: ADMIN --- ip pool update    2022-06-04 12:19:48
+[-] start supervising...    2022-06-04 12:19:48
+[V] sId: test --- find course: 64548    2022-06-04 12:19:49
+[-] sId: test --- start supervising...    2022-06-04 12:26:09
+[V] sId: test --- find course: 64548    2022-06-04 12:26:09
+[-] sId: test --- start supervising...    2022-06-04 12:26:26

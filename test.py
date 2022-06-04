@@ -1,9 +1,5 @@
-import time
-import eventRec
-import iplib
-from lxml import etree
+import re
 import requests
+import eventRec
 
-ip = iplib.IpLib()
 
-print(ip.get_ip())
