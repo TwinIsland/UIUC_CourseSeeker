@@ -1,9 +1,6 @@
 import config
-import requests
 import re
-import iplib
-from bs4 import BeautifulSoup
-import json
+import superviseCourse
 
 
 def get_course_info(course_name: str, crn: str) -> dict:
@@ -13,21 +10,8 @@ def get_course_info(course_name: str, crn: str) -> dict:
 
 
 def is_valid_course(course: dict[str, str]) -> bool:
-    ip_pool = iplib.IpLib()
-    url, uid = course["url"], course["crn"]
-    html = requests.get(url,
-                        proxies=ip_pool.get_ip(),
-                        headers=iplib.get_header()).content.decode("utf-8")
+    course_s = superviseCourse.SuperviseCourses(course, "ADMIN")
+    ans = course_s.update_course_spec()
+    del course_s
+    return ans
 
-    soup = BeautifulSoup(html, 'lxml')
-    course_desc = str(soup.find_all('script', attrs={'type': 'text/javascript'})[1])
-    course_desc = "[" + course_desc.split("[")[1].split("]")[0] + "]"
-    course_desc = json.loads(course_desc)
-    for i in course_desc:
-        if i["crn"] == str(course["crn"]):
-            return True
-    return False
-
-
-print(get_course_info("cs225", "62137"))
-print(is_valid_course(get_course_info("cs225", "62137")))

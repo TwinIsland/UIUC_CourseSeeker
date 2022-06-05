@@ -74,8 +74,8 @@ class SuperviseCourses:
         return False
 
 
-test = SuperviseCourses({"url": "https://courses.illinois.edu/schedule/2022/fall/CS/233",
-                         "crn": 64548},
-                        user="test")
-
-test.start()
+# test = SuperviseCourses({"url": "https://courses.illinois.edu/schedule/2022/fall/CS/233",
+#                          "crn": 64548},
+#                         user="test")
+#
+# test.start()
